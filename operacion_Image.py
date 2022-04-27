@@ -34,7 +34,7 @@ def operaciones():
     if opc == 1:
         etiqueta_titular.configure(text="Suma por metodo de Open CV add")
         image=cv2.add(img1,img2)
-        image = imutils.resize(image,height=300)
+        image = imutils.resize(image,height=350)
         image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
         #print(image)
         im=PIL.Image.fromarray(image,'RGB')
