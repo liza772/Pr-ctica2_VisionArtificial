@@ -22,6 +22,7 @@ def operaciones():
     
     img1 = cv2.imread('florrosa.png')
     img2 = cv2.imread('floramarilla.png')
+    
     #print (img1)
     #print("-------------------")
     #print (img2)
@@ -288,13 +289,13 @@ raiz.title("Operador de imagenes") #Cambiar el nombre de la ventana
 raiz.geometry("1200x480") #Configurar tamaño
 raiz.resizable(0,0)
 etiqueta_titular = ttk.Label(text="Operaciones de imagenes")
-img1vi=PhotoImage(file="img1.png")
+img1vi=PhotoImage(file="florrosa.png")
 widget=Label(raiz,text="Imagen 1",image=img1vi).place(x=50,y=50)
-img2vi=PhotoImage(file="img2.png")
+img2vi=PhotoImage(file="floramarilla.png")
 widget2=Label(raiz,text="imagen 2",image=img2vi).place(x=850,y=50)
 etiqueta_titular.place(x=600, y=20)
 resultadoImagen = Label(raiz,text="Resultado")
 resultadoImagen.place(x=400,y=50)
-keyboard.on_press_key("p", lambda _:operaciones())
+keyboard.on_press_key("y", lambda _:operaciones())
 
 raiz.mainloop() 
