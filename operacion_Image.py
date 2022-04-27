@@ -30,7 +30,7 @@ def operaciones():
     global opc
     
     opc = opc+1
-    print("Presionaste la p contador:",opc)
+    print("Presionaste la y contador:",opc)
     if opc == 1:
         etiqueta_titular.configure(text="Suma por metodo de Open CV add")
         image=cv2.add(img1,img2)
