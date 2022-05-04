@@ -1,15 +1,15 @@
 #Yasmin Esqueda
 
 from ast import Try
-import cv2
-import numpy as np
-import PIL
+import cv2 #open cv procesamiento de imagenes
+import numpy as np #calculos matematicos
+import PIL #intercambio de dato-imagen imagen-dato
 from PIL import ImageTk
 from PIL import Image
-import tkinter as tk
+import tkinter as tk  #para trabajar la vista
 from tkinter import *
 from tkinter import ttk
-import imutils
+import imutils #conversiones
 import keyboard
 import math as ma
 
@@ -285,7 +285,7 @@ def operaciones():
         
 
 raiz = Tk()
-raiz.title("Operador de imagenes") #Cambiar el nombre de la ventana 
+raiz.title("Operador de imagenes") #ventana 
 raiz.geometry("1200x480") #Configurar tamaño
 raiz.resizable(0,0)#no modificar el tamaño de la ventana
 etiqueta_titular = ttk.Label(text="Operaciones de imagenes")
